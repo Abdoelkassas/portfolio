@@ -1,0 +1,48 @@
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.box{
+    position: absolute;
+    width: 500px;
+    color: black;
+    padding: 20px;
+    height: 400px;
+    background-color: aliceblue;
+    transform: translate(-50%, -50%);
+    top: -90%;
+    left: 20%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: inset 0 0 7px 0 black;
+}
+.center{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.close{
+    position: absolute;
+    left: 95%;
+    font-size: larger;
+    cursor: pointer;
+}
+.open{
+    top: 50%;
+}
+
+.change_theme{
+    background: white;
+    color: #353535;
+
+}
+.background-change{
+    color:  #353535;
+}
