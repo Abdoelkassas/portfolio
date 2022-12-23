@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     font-family: sans-serif;
     background-color: #353535;
     color: #fff;
@@ -8,6 +9,11 @@ body {
     -moz-transition: .6s;
     -ms-transition: .6s;
     -o-transition: .6s;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 :root{
     --primaryTransition : .6s;
@@ -82,18 +88,18 @@ li:hover {
 }
 .con{
     color: green;
-    
 }
-#discord{
-    color: #5561f5;
-}
-#github{
-    color: black;
-}
-#youtube{
+#youtube:hover{
     color: red;
 }
+#github:hover{
+    color: orange;
+}
+#discord:hover{
+    color: royalblue;
+}
 #youtube , #github , #discord{
+    color: #353535;
     font-size: 24px;
     margin: 4px;
 }
@@ -108,12 +114,7 @@ li:hover {
     -o-transition: var(--primaryTransition);
 }
 
-.background_set{
-    font-size: 400px;
-    z-index: -1;
-    filter: opacity(.1);
-    -webkit-filter: opacity(.1);
-}
+
 /*                  SETTINGS-END                 */
 
 /*                  PORTFOLIO                 */
@@ -129,18 +130,35 @@ li:hover {
 
 
 
-
-
 /*                  PORTFOLIO-END                 */
 
 
 
+@media (max-width: 786px) {
+    .background{
+        font-size: 230px;
+    }
+    li{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .box{
+        width: 100px;
+        left: 50%;
+    }
+    body{
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+
+}
 
 @keyframes bg {
     50% {
         filter: opacity(0.3);
     }
-
-
 }
-
