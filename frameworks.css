@@ -13,7 +13,7 @@
     background-color: aliceblue;
     transform: translate(-50%, -50%);
     top: -90%;
-    left: 20%;
+    left: 30%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -45,4 +45,59 @@
 }
 .background-change{
     color:  #353535;
+
+}
+.background_set{
+    font-size: 300px;
+    z-index: -1;
+    filter: opacity(.1);
+    -webkit-filter: opacity(.1);
+}
+@media (max-width: 786px) {
+    .box{
+       width: 250px;
+       height: 240px;
+       left: 50%;
+    }
+    .close{
+        left: 87%;
+    }
+    .background_set{
+        font-size: 100px;
+        z-index: -1;
+        filter: opacity(.1);
+        -webkit-filter: opacity(.1);
+    }
+    body{
+        width: 100%;
+    }
+}
+
+@media (min-width: 787px) and (max-width: 992px) {
+    .box{
+        width: 400px;
+        height: 350px;
+        left: 50%;
+     }
+     .close{
+         left: 87%;
+     }
+     .background_set{
+         font-size: 100px;
+         z-index: -1;
+         filter: opacity(.1);
+         -webkit-filter: opacity(.1);
+     }
+     body{
+         width: 100%;
+     }
+ }
+@media (max-width: 1200px) {
+
+}
+
+@keyframes bg {
+    50% {
+        filter: opacity(0.3);
+    }
 }
